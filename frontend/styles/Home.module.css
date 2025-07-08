@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  }
+  
+  .welcome {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+  
+  .letter {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards ease-out;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #a084cf;
+  }
+  
+  .letter:hover {
+    transform: translateY(-10px) scale(1.2);
+    color: #f6c1c1;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
