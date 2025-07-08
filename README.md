@@ -1,37 +1,33 @@
-Frontend (Next.js):
-
+🔐 Authentication System (Next.js + NestJS + PostgreSQL)
+🚀 Frontend (Next.js + TypeScript)
 Created signin and signup pages using React and TypeScript.
 
-Connected forms to backend via fetch API.
+Connected forms to the backend using the fetch API.
 
-Handled user input, form validation, and redirection after success.
+Managed user input, form validation, and redirection after successful authentication.
 
-Added redirection to make /signin the first page that opens.
+Implemented automatic redirection to /signin as the default landing page.
 
-Backend (NestJS):
+🛠 Backend (NestJS)
+Set up an authentication module with /signup and /login endpoints.
 
-Set up an authentication module with signup and login endpoints.
+Used bcrypt to securely hash user passwords.
 
-Used bcrypt to hash passwords securely.
+Created DTOs and added input validation for request handling.
 
-Implemented DTOs and validation for incoming requests.
+🗄 Database (PostgreSQL + TypeORM)
+Created the User entity to represent users in the system.
 
-Database (PostgreSQL with TypeORM):
+Configured the PostgreSQL connection via TypeORM.
 
-Created User entity.
+Generated and executed migrations to create the users table.
 
-Configured database connection using TypeORM.
+✅ Testing (Postman)
+Tested registration and login endpoints using Postman.
 
-Ran migrations to create the user table in PostgreSQL.
+Verified correct database storage and proper JSON responses.
 
-Testing (Postman):
+🔗 Integration
+Successfully integrated frontend and backend.
 
-Successfully tested registration and login using Postman.
-
-Verified that data is stored correctly and responses are accurate.
-
-Integration:
-
-Connected frontend and backend.
-
-On successful signup/login, users are redirected to the /home page.
+After a successful signup/login, users are automatically redirected to the /home page.
